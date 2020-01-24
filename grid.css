@@ -1,0 +1,126 @@
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#navig {
+  top: 0%;
+  left: 0px;
+  overflow-y: scroll;
+}
+
+#navig h1 {
+  text-align: center;
+  font-weight: lighter;
+  /*transition: transform 0.3s ease-out;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;*/
+}
+
+#navig ul {
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+#navig li {
+  list-style-type: none;
+  border-top: 1px solid grey;
+  text-align: justify;
+  width: 100%;
+}
+
+#navig a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: grey;
+  cursor: pointer;
+}
+
+#content code {
+  background-color: #f7f7f7;
+  display: block;
+  margin: 10px;
+}
+
+@media (min-width: 320px) {
+  #navig {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    border-bottom: 1px solid grey;
+  }
+  #navig h1 {
+    height: 5px;
+    padding-bottom: 7px;
+  }
+  #navig li {
+    padding: 2px;
+  }
+  #content {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 76%;
+    word-break: normal;
+  }
+}
+
+@media (min-width: 640px) {
+  #navig {
+    height: 50%;
+    border-bottom: 2px solid grey;
+  }
+  #navig h1 {
+    height: 10px;
+  }
+  #navig li {
+    padding: 4px;
+  }
+  #content {
+    margin-top: 60%;
+  }
+}
+
+@media (min-width: 980px) {
+  #navig {
+    width: 25%;
+    border-right: 3px solid grey;
+    height: 100vh;
+    position: fixed;
+  }
+  #navig h1 {
+    height: 35px;
+    padding-bottom: 15px;
+  }
+  #navig a {
+    margin-left: 10px;
+  }
+  #navig li {
+    padding: 10px;
+    word-break: normal;
+  }
+  #content {
+    margin: 0px 15px 10px 250px;
+  }
+}
+
+@media (min-width: 1100px) {
+  #navig {
+    width: 15%;
+    border-right: 3px solid grey;
+    height: 100vh;
+    position: fixed;
+  }
+  #navig h1 {
+    height: 50px;
+  }
+  #navig li {
+    padding: 15px;
+  }
+  #content {
+    margin: 0px 30px 15px 350px;
+  }
+}
+/*# sourceMappingURL=grid.css.map */
